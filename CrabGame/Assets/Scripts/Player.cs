@@ -16,19 +16,22 @@ public class Player : MonoBehaviour
         // If we select a crab, define currentCrab as its NavMesh agent and
         // change the other crab's currentCrab to null so it doesn't move
         string otherCrabName;
+        
         if(name == "Crab1")
         {
             otherCrabName = "Crab2";
-        } else
+        } 
+        else
         {
             otherCrabName = "Crab1";
         }
+        
         GameObject.Find(otherCrabName).GetComponent<Player>().currentCrab = null;
     }
 
     private void Update()
     {
-        //player movement kinopya ko lang itong code sa https://www.youtube.com/watch?v=KU2CKBlCAxQ
+        //player movement 
         if (Input.GetMouseButtonDown(0) && currentCrab != null)
         {
             Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
