@@ -15,7 +15,14 @@ public class Player : MonoBehaviour
         currentCrab = GetComponent<NavMeshAgent>();
         // If we select a crab, define currentCrab as its NavMesh agent and
         // change the other crab's currentCrab to null so it doesn't move
-        string otherCrabName = name == "Crab1" ? "Crab2" : "Crab1";
+        string otherCrabName;
+        if(name == "Crab1")
+        {
+            otherCrabName = "Crab2";
+        } else
+        {
+            otherCrabName = "Crab1";
+        }
         GameObject.Find(otherCrabName).GetComponent<Player>().currentCrab = null;
     }
 
