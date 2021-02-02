@@ -6,18 +6,10 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
     public LayerMask whatCanBeClickedOn;
-    public GameObject stackbutton;
 
     private NavMeshAgent currentCrab;
     private Player otherCrabControl;
     private string otherCrabName;
-    private bool stack = false;
-
-    // Binded to StackButton button 
-    public void Stack()
-    {
-        stack = !stack;
-    }
 
     private void Start()
     {
@@ -41,23 +33,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        // Check if crabs are near each other
-        if ((transform.position - otherCrabControl.transform.position).magnitude < 2f)
-        {
-            // Enable button when crabs are near each other
-            stackbutton.SetActive(true);
-            // Check if stack button is clicked
-            if (stack)
-            {
-                // Code here to stack crabs
-            }
-        }
-        else
-        {
-            // Disable button when crabs are far away from each other
-            stackbutton.SetActive(false);
-        }
-
         //player movement 
         if (Input.GetMouseButtonDown(0) && currentCrab != null)
         {
