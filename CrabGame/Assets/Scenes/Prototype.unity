@@ -275,8 +275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9130716a9704e84419006ada3137cacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToRotate: {fileID: 0}
-  RotationCenterPoint: {fileID: 0}
+  ToRotate: {fileID: 963194228}
+  RotationCenterPoint: {fileID: 764257998}
 --- !u!4 &589670315
 Transform:
   m_ObjectHideFlags: 0
