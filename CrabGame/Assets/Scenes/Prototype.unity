@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44654262, g: 0.49637288, b: 0.5747961, a: 1}
+  m_IndirectSpecularColor: {r: 0.44654214, g: 0.49637234, b: 0.5747954, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 44394311f7617b4479a8dfa40d64847b, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 9925c5747f1756649af44ce8b0649ad8, type: 2}
 --- !u!1 &43100476
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,8 +361,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.0842466, y: 1.3696623, z: 2.427227}
+  m_Center: {x: -0.020055294, y: 0.49674463, z: 0.29491806}
 --- !u!95 &410721602
 Animator:
   serializedVersion: 3
@@ -458,8 +458,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.2140927, y: 1.225069, z: 2.0261755}
+  m_Center: {x: -0.03992009, y: 0.5834236, z: 0.12338257}
 --- !u!23 &412607681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -588,7 +588,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6ed8ba024e9e2ca45ac375c217690e3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.9
+      value: -5.54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ed8ba024e9e2ca45ac375c217690e3b,
         type: 3}
@@ -702,7 +702,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a6b6201b1798a664881160a0103b7303,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.4
+      value: -4.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a6b6201b1798a664881160a0103b7303,
         type: 3}
