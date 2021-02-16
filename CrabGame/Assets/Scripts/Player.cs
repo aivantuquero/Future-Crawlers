@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
     public LayerMask whatCanBeClickedOn;
+    public Rigidbody crabRigidBody;
+    public Animator crabAnimator;
 
     private NavMeshAgent currentCrab;
     private Player otherCrabControl;
@@ -33,6 +35,17 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        /*
+        Debug.Log(crabRigidBody.velocity == Vector3.zero);             Works but theres a small problem:
+        if(crabRigidBody.velocity == Vector3.zero)               The idle and walking animation affects crab position
+        {                                                        so this if else recognizes those animations as movement
+            crabAnimator.SetBool("is_moving", false);                   to be fixed....
+        }
+        else
+        {
+            crabAnimator.SetBool("is_moving", true);
+        }*/
+
         //player movement 
         if (Input.GetMouseButtonDown(0) && currentCrab != null)
         {

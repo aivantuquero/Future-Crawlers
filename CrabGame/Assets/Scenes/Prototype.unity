@@ -289,6 +289,8 @@ MonoBehaviour:
   whatCanBeClickedOn:
     serializedVersion: 2
     m_Bits: 256
+  crabRigidBody: {fileID: 410721597}
+  crabAnimator: {fileID: 410721602}
 --- !u!195 &410721599
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -361,8 +363,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.0842466, y: 1.3696623, z: 2.427227}
-  m_Center: {x: -0.020055294, y: 0.49674463, z: 0.29491806}
+  m_Size: {x: 4.0842466, y: 1.1057858, z: 2.427227}
+  m_Center: {x: -0.020055294, y: 0.62868285, z: 0.29491806}
 --- !u!95 &410721602
 Animator:
   serializedVersion: 3
@@ -373,7 +375,7 @@ Animator:
   m_GameObject: {fileID: 410721595}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1206d3f50bd79874e81b65d33be95328, type: 2}
+  m_Controller: {fileID: 9100000, guid: 12f57cbba41d52a47acb2ad114074f7d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -425,6 +427,8 @@ MonoBehaviour:
   whatCanBeClickedOn:
     serializedVersion: 2
     m_Bits: 256
+  crabRigidBody: {fileID: 412607677}
+  crabAnimator: {fileID: 412607682}
 --- !u!195 &412607679
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -458,8 +462,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.2140927, y: 1.225069, z: 2.0261755}
-  m_Center: {x: -0.03992009, y: 0.5834236, z: 0.12338257}
+  m_Size: {x: 4.2140927, y: 1.139142, z: 2.0261755}
+  m_Center: {x: -0.03992009, y: 0.6263871, z: 0.12338257}
 --- !u!23 &412607681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -499,6 +503,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &412607682
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412607675}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a94dc88ba78b7eb45b67bd75ed7019fa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &478735244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -588,7 +611,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6ed8ba024e9e2ca45ac375c217690e3b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.54
+      value: -5.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ed8ba024e9e2ca45ac375c217690e3b,
         type: 3}
