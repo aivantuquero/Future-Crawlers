@@ -1,32 +1,59 @@
 fileFormatVersion: 2
-guid: a6b6201b1798a664881160a0103b7303
+guid: 2de31d5a0e2a6084d9f567b77c026518
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable:
-  - first:
-      74: -742399210269488282
-    second: rig|Dash Animation
-  - first:
-      74: -7698064010373478164
-    second: rig|Falling Animation
-  - first:
-      74: -5489073397327795395
-    second: rig|Idle Animation
-  - first:
-      74: 8998906055643965073
-    second: rig|Initial Jump Animation
-  - first:
-      74: -5264431773486768502
-    second: rig|Landing Animation
-  - first:
-      74: -2633622996758989789
-    second: rig|Walking Animation
+  internalIDToNameTable: []
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Log Rings
+    second: {fileID: 2100000, guid: 6e243cb1e2b43fc4998c9897c598887a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Log Rings.001
+    second: {fileID: 2100000, guid: 57ba2c4cd342d77468ff05649100ab2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Log
+    second: {fileID: 2100000, guid: 640ed19ffe00cdd4b9d8309114a8dfa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Log.001
+    second: {fileID: 2100000, guid: 29516bcef4ff244418e234d40973b209, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood plank
+    second: {fileID: 2100000, guid: 7480410ec4802a4409f4fdee4ae1ceb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood plank.001
+    second: {fileID: 2100000, guid: b2b1a895eee24254c939f1f4cbfa2e44, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Bake Test
-    second: {fileID: 2800000, guid: 67800cbcb835e9e4c815ac5d6c84eca2, type: 3}
+      name: Log Variation Diffuse
+    second: {fileID: 2800000, guid: 6aba0058a3159f44f8f062fc43d5cf80, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Plank Variation Diffuse
+    second: {fileID: 2800000, guid: 003c58cc9a618de41a902749b6adbaf8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood Diffuse
+    second: {fileID: 2800000, guid: 4db02cbf697f82148ad9d12b74061699, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sizzix-tree-rings-662429
+    second: {fileID: 2800000, guid: c254346d96263a9448055e9eac5795fd, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
