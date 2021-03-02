@@ -32,12 +32,12 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Diffv2red
-    second: {fileID: 2800000, guid: 9705e8d813b628b4387d36da38424690, type: 3}
+    second: {fileID: 2800000, guid: 1ac3893536418b544b22bb84646921b7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Roughness
-    second: {fileID: 2800000, guid: 58d8d35c0e7f72d4ea8fc2099116a67e, type: 3}
+    second: {fileID: 2800000, guid: a492a5c0eabff7a45b1cb62f37efb678, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
