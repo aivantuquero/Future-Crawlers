@@ -22,14 +22,15 @@ public class SwipeManager : MonoBehaviour
             }
             else
             {
+                float swipeDistance = startTouch.position.magnitude - Input.GetTouch(0).position.magnitude;
                 // If dragging, compare startTouch to current touch and decide what direction to turn
-                if(startTouch.position.magnitude > Input.GetTouch(0).position.magnitude)
+                if (swipeDistance > 0)
                 {
-                    ToRotate.RotateAround(RotationCenterPoint.position, Vector3.up, 30 * Time.deltaTime);
+                    ToRotate.RotateAround(RotationCenterPoint.position, Vector3.up, swipeDistance * Time.deltaTime);
                 }
-                else if(startTouch.position.magnitude < Input.GetTouch(0).position.magnitude)
+                else if(swipeDistance < 0)
                 {
-                    ToRotate.RotateAround(RotationCenterPoint.position, Vector3.down, 30 * Time.deltaTime);
+                    ToRotate.RotateAround(RotationCenterPoint.position, Vector3.down, Mathf.Abs(swipeDistance) * Time.deltaTime);
                 }
             }
         } 
