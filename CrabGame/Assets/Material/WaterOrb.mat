@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water
-  m_Shader: {fileID: -6465566751694194690, guid: 40851e6e29b0f634da5f5f95b9772ab2,
+  m_Name: WaterOrb
+  m_Shader: {fileID: -6465566751694194690, guid: 1edf7e72c6248964ba5503ef5dcd4f9b,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -21,10 +21,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Vector1_1F8BCFD0: 1.63
-    - Vector1_4F92928E: 9
-    - Vector1_82689E01: 17.4
-    - Vector1_9B1C32A6: 0.07
+    - Vector1_1F8BCFD0: 1
+    - Vector1_4F92928E: 7
+    - Vector1_82689E01: 7
+    - Vector1_9B1C32A6: 0.01
     m_Colors:
-    - Color_330EE3CF: {r: 5.3403134, g: 5.3403134, b: 5.3403134, a: 0}
-    - Color_6431FF38: {r: 0.0016019903, g: 0.11320752, b: 0.061718233, a: 0}
+    - Color_330EE3CF: {r: 0.6282722, g: 2.052356, b: 4, a: 0}
+    - Color_6431FF38: {r: 0.2136882, g: 0.6270836, b: 0.9245283, a: 0}

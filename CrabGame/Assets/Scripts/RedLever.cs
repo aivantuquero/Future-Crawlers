@@ -7,6 +7,7 @@ public class RedLever : MonoBehaviour
 {
     public GameObject crab;
     public Button button;
+    public RedCrystalWall redWallScript;
 
     private int requireLeverActivationDistance = 5;
 
@@ -65,6 +66,7 @@ public class RedLever : MonoBehaviour
     public void RedSwitchOn()
     {
         flipped = true;
+        redWallScript.isActivated = true;
         isSwitched = !isSwitched;
     }
 }

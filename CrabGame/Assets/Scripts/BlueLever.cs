@@ -7,6 +7,7 @@ public class BlueLever : MonoBehaviour
 {
     public GameObject crab;
     public Button button;
+    public BlueCrystalWall BlueWallScript;
 
     private int requireLeverActivationDistance = 5;
 
@@ -67,5 +68,6 @@ public class BlueLever : MonoBehaviour
     {
         flipped = true;
         isSwitched = !isSwitched;
+        BlueWallScript.isActivated = true;
     }
 }
