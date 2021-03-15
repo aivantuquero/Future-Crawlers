@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class BlueCrystalWall : MonoBehaviour
 {
     public bool isActivated = false;
+    
+    //the navmesh obstacle attached to the gameobject
+    public NavMeshObstacle nmo;
 
     void Update()
     {
@@ -16,8 +20,23 @@ public class BlueCrystalWall : MonoBehaviour
             currentPosition.y += -2 * Time.deltaTime;
             transform.position = currentPosition;
 
-
         }
-        
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.name == "Crab1")
+        {
+            //disable the navmeshobstacle when crab1 is detected
+            nmo.enabled = false;
+        }
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.name == "Crab1")
+        {
+            nmo.enabled = true;
+        }
     }
 }

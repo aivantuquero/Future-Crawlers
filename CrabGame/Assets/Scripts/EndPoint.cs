@@ -29,13 +29,4 @@ public class EndPoint : MonoBehaviour
 
     }
 
-    //if a crab leaves the point, the last condition above will not continue
-    private void OnTriggerExit(Collider collider)
-    {
-        if (collider.gameObject.name == "Crab1")
-            isCollidedWithCrab1 = false;
-        else if (collider.gameObject.name == "Crab2")
-            isCollidedWithCrab2 = false;
-    }
-
 }
