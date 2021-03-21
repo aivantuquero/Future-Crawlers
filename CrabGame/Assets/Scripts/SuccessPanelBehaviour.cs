@@ -3,19 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenuButtonsBehaviour : MonoBehaviour
+public class SuccessPanelBehaviour : MonoBehaviour
 {
-    public void ShowPauseMenu()
+    public void ShowSuccessMenu()
     {
         gameObject.SetActive(true);
     }
 
-    public void Resume()
-    {
-        gameObject.SetActive(false);
-    }
-
-    public void Restart()
+    public void RestartLevel()
     {
         StartCoroutine(LoadCurrentScene());
     }
@@ -33,7 +28,7 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
         }
     }
 
-    public void MainMenu()
+    public void LevelSelect()
     {
         StartCoroutine(LoadMainMenuScene());
 
@@ -42,7 +37,7 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
     IEnumerator LoadMainMenuScene()
     {
         // The Application loads the Scene in the background as the current Scene runs.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainMenu");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("LevelSelectMenu");
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
