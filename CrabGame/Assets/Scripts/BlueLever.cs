@@ -15,14 +15,13 @@ public class BlueLever : MonoBehaviour
     private bool flipped = false;
     private float minLeverAngle = 0.4f;
     private float maxLeverAngle = 0.9f;
+    public bool neverBeenTouched = true;
 
     
     void Update()
     {
         // Enable lever button if distance of crab and lever = requireLeverActivationDistance
-        if (Vector3.Distance(gameObject.transform.position,
-                            crab.transform.position)         // Lines too long, did this for readability
-                            < requireLeverActivationDistance)
+        if ((Vector3.Distance(gameObject.transform.position, crab.transform.position) < requireLeverActivationDistance) && neverBeenTouched)
         {
             button.gameObject.SetActive(true);
         }
@@ -69,5 +68,6 @@ public class BlueLever : MonoBehaviour
         flipped = true;
         isSwitched = !isSwitched;
         BlueWallScript.isActivated = true;
+        neverBeenTouched = false;
     }
 }
