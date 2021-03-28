@@ -42,7 +42,7 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
     IEnumerator LoadMainMenuScene()
     {
         // The Application loads the Scene in the background as the current Scene runs.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainMenu");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Main Menu");
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
