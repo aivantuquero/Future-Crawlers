@@ -1892,6 +1892,7 @@ GameObject:
   - component: {fileID: 668946055}
   - component: {fileID: 668946057}
   - component: {fileID: 668946056}
+  - component: {fileID: 668946058}
   m_Layer: 5
   m_Name: tutorial panel
   m_TagString: Untagged
@@ -1960,6 +1961,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668946054}
   m_CullTransparentMesh: 0
+--- !u!114 &668946058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668946054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2b2d52a417e764db53da281b143eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &682409872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 03486998a207f194cb3fd2770ac2dd2e,
@@ -2932,7 +2945,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 929354295}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 668946058}
+        m_MethodName: closeTutPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &929354295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3137,6 +3161,7 @@ GameObject:
   - component: {fileID: 996547337}
   - component: {fileID: 996547339}
   - component: {fileID: 996547338}
+  - component: {fileID: 996547340}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -3158,10 +3183,10 @@ RectTransform:
   m_Father: {fileID: 929354293}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -227}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 26.5}
+  m_SizeDelta: {x: 1006, y: 477}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996547338
 MonoBehaviour:
@@ -3204,6 +3229,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996547336}
   m_CullTransparentMesh: 0
+--- !u!95 &996547340
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996547336}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30bc1d9015bee2e42997a7b5b2728872, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1034707121
 GameObject:
   m_ObjectHideFlags: 0
