@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -843,15 +843,15 @@ RectTransform:
   m_GameObject: {fileID: 961515520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.24, y: 0.24, z: 1}
   m_Children: []
   m_Father: {fileID: 355226596}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: -2.2}
-  m_SizeDelta: {x: 457, y: 917}
+  m_AnchoredPosition: {x: 122, y: 1.8}
+  m_SizeDelta: {x: 675, y: 966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961515522
 MonoBehaviour:
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 530e8717dfd31d948892279db55bdd98, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 182932e8f09b7c645b3b0006cd65aff2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
