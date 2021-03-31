@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class tapherebehaviour : MonoBehaviour
+public class levelselection2 : MonoBehaviour
 {
-    public void levelselect()
+    public void BackButton()
     {
-        StartCoroutine(levelselection());
+        StartCoroutine(LoadChapter1());
+
     }
 
-    IEnumerator levelselection()
+    IEnumerator LoadChapter1()
     {
         // The Application loads the Scene in the background as the current Scene runs.
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Level Selection C1");
@@ -21,4 +22,7 @@ public class tapherebehaviour : MonoBehaviour
             yield return null;
         }
     }
+    
+
+
 }
