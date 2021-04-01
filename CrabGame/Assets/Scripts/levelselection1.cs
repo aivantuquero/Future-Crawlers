@@ -2,9 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class levelselection1 : MonoBehaviour
 {
+
+    private bool loadScene = false;
+    public Text loadingText;
+    public Slider sliderBar;
+    public Image loadingScreenPanel;
+
+    private void Start()
+    {
+        sliderBar.gameObject.SetActive(false);
+    }
+
+
     public void BackButton()
     {
         StartCoroutine(LoadMainMenu());
@@ -42,6 +55,20 @@ public class levelselection1 : MonoBehaviour
 
     public void LoadLevelC1L1()
     {
+        
+        
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
+
+        // ...and start a coroutine that will load the desired scene.
         StartCoroutine(LoadLevel1());
 
     }
@@ -54,12 +81,25 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
+         
             yield return null;
         }
     }
 
     public void LoadLevelC1L2()
     {
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
         StartCoroutine(LoadLevel2());
 
     }
@@ -72,12 +112,25 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
+           
             yield return null;
         }
     }
 
     public void LoadLevelC1L3()
     {
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
         StartCoroutine(LoadLevel3());
 
     }
@@ -90,11 +143,24 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
+           
             yield return null;
         }
     }
     public void LoadLevelC1L4()
     {
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
         StartCoroutine(LoadLevel4());
 
     }
@@ -107,12 +173,25 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
+          
             yield return null;
         }
     }
 
     public void LoadLevelC1L5()
     {
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
         StartCoroutine(LoadLevel5());
 
     }
@@ -125,12 +204,25 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
+            
             yield return null;
         }
     }
 
     public void LoadLevelC1L6()
     {
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
         StartCoroutine(LoadLevel6());
 
     }
@@ -143,12 +235,25 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
+           
             yield return null;
         }
     }
 
     public void LoadLevelC1L7()
     {
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
         StartCoroutine(LoadLevel7());
 
     }
@@ -161,12 +266,25 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
+          
             yield return null;
         }
     }
 
     public void LoadLevelC1L8()
     {
+        // ...set the loadScene boolean to true to prevent loading a new scene more than once...
+        loadScene = true;
+
+        //Visible Slider Progress bar
+        sliderBar.gameObject.SetActive(true);
+
+        // ...change the instruction text to read "Loading..."
+        loadingText.text = "Loading...";
+
+        loadingScreenPanel.gameObject.SetActive(true);
         StartCoroutine(LoadLevel8());
 
     }
@@ -179,6 +297,8 @@ public class levelselection1 : MonoBehaviour
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
+            float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            sliderBar.value = progress;
             yield return null;
         }
     }

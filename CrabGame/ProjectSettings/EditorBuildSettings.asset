@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Selection C1.unity
     guid: 67dc73c9fa2140042bf73faf7f182501
   - enabled: 1
-    path: Assets/Scenes/Level Selection C2.unity
-    guid: 4032b12ae34d580489bf2306dd2e9f65
-  - enabled: 1
     path: Assets/Scenes/C1 Level 1.unity
     guid: 82b8422f8234037478da0e9448f9723c
   - enabled: 1
@@ -38,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/C1 Level 8.unity
     guid: 754ccc9cb1b4cbc4d9f2b4893de2d7af
+  - enabled: 1
+    path: Assets/Scenes/Level Selection C2.unity
+    guid: 4032b12ae34d580489bf2306dd2e9f65
   m_configObjects: {}

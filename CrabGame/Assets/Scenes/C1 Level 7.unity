@@ -750,6 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9883eb2ff99689c48ae3df736bd3de03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SuccessPanel: {fileID: 598118757}
 --- !u!1 &231639043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6579867903713063812, guid: fa91d8b3d64db464cb99aa41a77f321e,
@@ -3867,7 +3868,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1090494250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598118757}
+        m_MethodName: RestartLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1090494250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4877,7 +4889,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1571970646}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598118757}
+        m_MethodName: LevelSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1571970646
 MonoBehaviour:
   m_ObjectHideFlags: 0

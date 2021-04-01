@@ -37,7 +37,7 @@ public class SuccessPanelBehaviour : MonoBehaviour
     IEnumerator LoadMainMenuScene()
     {
         // The Application loads the Scene in the background as the current Scene runs.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("LevelSelectMenu");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Level Selection C1");
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
