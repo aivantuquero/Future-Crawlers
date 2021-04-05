@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1630,7 +1630,7 @@ RectTransform:
   m_GameObject: {fileID: 516159820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.24, y: 0.24, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 453274564}
   m_RootOrder: 3
@@ -1638,7 +1638,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -200, y: -160}
-  m_SizeDelta: {x: 694, y: 701}
+  m_SizeDelta: {x: 631, y: 524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &516159822
 MonoBehaviour:
@@ -1659,7 +1659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2843ea77264fa0743918c3635385b5de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a0335a6ee05c944dab3416efcba3bd3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4058,8 +4058,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -200, y: 211}
-  m_SizeDelta: {x: 229.90399, y: 30}
+  m_AnchoredPosition: {x: -211.1, y: 211}
+  m_SizeDelta: {x: 252.10599, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218289708
 MonoBehaviour:
@@ -4093,7 +4093,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You can disable a crystal by interacting the lever
+  m_Text: You can disable a crystal by getting close to a lever and tapping the indicator
+    above. the Blue crab can only interact the blue lever and vice versa.
 --- !u!222 &1218289709
 CanvasRenderer:
   m_ObjectHideFlags: 0
